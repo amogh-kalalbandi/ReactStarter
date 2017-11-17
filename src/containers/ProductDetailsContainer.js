@@ -13,6 +13,8 @@ class ProductHomeContainer extends React.Component {
 		return (
 			<div>
 				<ProductHeader />
+				<ProductDetailing product={products[0]} />
+				<br /><br /><br /><br /><br />
 				<ProductList products={products} />
 			</div>
 			);

@@ -4,7 +4,7 @@ class IndividualProduct extends React.Component {
 	render() {
 		const product = this.props.product;
 		return (
-				<li> { product.name } <br /> <img src={product.image} height="42" width="42" /> </li> 
+				<li> { product.name } <img src={product.image} height="42" width="42" /> </li> 
 			);
 	}
 }
