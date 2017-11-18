@@ -7,10 +7,8 @@ import ProductCartContainer from './containers/ProductCartContainer';
 //create a component that output html
 const App = () => {
     return (
-        <div>
           <ProductHomeContainer />
-        </div>
-        );
+           );
 }
 
 //add the component to DOM

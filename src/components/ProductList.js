@@ -11,7 +11,7 @@ class ProductList extends React.Component {
 		}
 		);
 		return (
-			<div> 
+			<div className="individual-product-container"> 
 				<ul className="product-inlined">
 				{rows}
 				</ul>

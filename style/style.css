@@ -1,0 +1,31 @@
+.individual-product {
+	display:inline-block;
+	padding:0 10px;
+	text-align: center;
+}
+
+.individual-product-container {
+	padding-top: 10px;
+}
+
+.product-header {
+	font-size: 35px;
+	padding-bottom: 10px;
+	width:500px;
+	text-align: center;
+}
+
+.cart-image {
+	height: 42px;
+	width: 42px;
+	float: right;
+}
+
+.individual-product > div > img {
+	height:200px;
+	width:200px;
+}
+
+.individual-product .product-container .product-text {
+	padding-top: 10px;
+}

@@ -13,7 +13,7 @@ class ProductCartContainer extends React.Component {
 		return (
 			<div>
 				<ProductHeader />
-				<CartCategory products = {products} />
+				<CartCategory products={products} />
 			</div>
 			);
 	}
