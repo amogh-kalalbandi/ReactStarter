@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import ProductHomeContainer from './containers/ProductHomeContainer';
 import ProductDetailsContainer from './containers/ProductDetailsContainer';
 import ProductCartContainer from './containers/ProductCartContainer';
+import Routes from './routes'
 
 //create a component that output html
 const App = () => {
     return (
-          <ProductHomeContainer />
+          <Routes />
            );
 }
 

@@ -5,10 +5,11 @@ class ProductDetailing extends React.Component {
 		const product = this.props.product
 		return (
 				<div>
-					<img src={product.image} height="75" width="75" />
-					<br /> <br />
-					<h3>Name: {product.name} </h3>
-					<p> <b> desc: </b> {product.description} </p>
+					<img src={product.image} className="individual-product-image" />
+					<div className="individual-product-detailing">
+						<h3>Name: {product.name} </h3>
+						<p> <b> desc: </b> {product.description} </p>
+					</div>
 				</div>
 			);
 	}

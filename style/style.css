@@ -5,20 +5,37 @@
 }
 
 .individual-product-container {
-	padding-top: 10px;
+	padding-top: 65px;
+}
+
+.individual-product-image {
+	padding-left: 75px;
+	height: 200px;
+	width: 275px;
+}
+
+.fa {
+	padding-left: 10px;
+}
+
+.individual-product-detailing {
+	float: right;
+	padding-right: 250px;
+	padding-top: 15px;
 }
 
 .product-header {
 	font-size: 35px;
 	padding-bottom: 10px;
-	width:500px;
+	width:600px;
 	text-align: center;
 }
 
 .cart-image {
-	height: 42px;
+	height: 72px;
 	width: 42px;
 	float: right;
+	padding-bottom: 30px;
 }
 
 .individual-product > div > img {
