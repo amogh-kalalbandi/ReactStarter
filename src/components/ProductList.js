@@ -4,6 +4,7 @@ import IndividualProduct from './IndividualProduct'
 class ProductList extends React.Component {
 	render() {
 		const rows = [];
+		//debugger;
 		this.props.products.forEach((product) => {
 			return (
 				rows.push(<IndividualProduct product={product} key={product.name} />)

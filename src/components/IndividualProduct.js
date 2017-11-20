@@ -18,7 +18,7 @@ class IndividualProduct extends React.Component {
 		return (
 				<li className="individual-product"> 
 					<div className="product-container">
-						<Link to={'/details/'} > 
+						<Link to={`/details/${product.id}`} > 
 							<img src={product.image} /><br />
 						</Link>
 							<div className="product-text">
