@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'; 
-import { addToCart } from '../actions/cart'
+import { addToCart,removeFromCart } from '../actions/cart'
 
 class IndividualProduct extends React.Component {
 	addToCart = () => {
 		this.props.addToCart(this.props.product)
+	}
+
+	removeFromCart = () => {
+		//debugger;
+		this.props.removeFromCart(this.props.product);
 	}
 
 	render() {
@@ -19,6 +24,7 @@ class IndividualProduct extends React.Component {
 							<div className="product-text">
 								{ product.name } 
 								<i className="fa fa-plus" onClick={this.addToCart} />
+								<i className="fa fa-minus" onClick={this.removeFromCart} />
 							</div>
 						</div> 
 					</li> 
@@ -26,12 +32,13 @@ class IndividualProduct extends React.Component {
 	}
 }
 
-const mapStateToProps = () => ({
+// const mapStateToProps = () => ({
 
-});
+// });
 
 const mapDispatchToProps = (dispatch) => ({
 	addToCart: (product) => dispatch(addToCart(product)),
+	removeFromCart: (product) => dispatch(removeFromCart(product))
 })
 
-export default connect(mapStateToProps,mapDispatchToProps)(IndividualProduct);
+export default connect(null,mapDispatchToProps)(IndividualProduct);
