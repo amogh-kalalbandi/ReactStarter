@@ -24,7 +24,13 @@
 	padding-top: 15px;
 }
 
+.cart-image-container {
+	display: inline-block;
+	float: right;
+}
+
 .product-header {
+	display: inline-block;
 	font-size: 35px;
 	padding-bottom: 10px;
 	width:600px;
