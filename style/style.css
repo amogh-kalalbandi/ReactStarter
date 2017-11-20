@@ -44,9 +44,9 @@
 	padding-bottom: 30px;
 }
 
-.individual-product > div > img {
-	height:200px;
-	width:200px;
+.individual-product > div > a > img {
+	height:100px;
+	width:100px;
 }
 
 .individual-product .product-container .product-text {

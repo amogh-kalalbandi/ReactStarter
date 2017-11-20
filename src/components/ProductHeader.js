@@ -1,8 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux';
 
 class ProductHeader extends React.Component {
 	render() {
-		const num=0;
+		const num=this.props.quantity;
 		return (
 			<div className="product-header">
 				<p> Product List <div className="cart-image-container"><img src='http://pngimages.net/sites/default/files/shopping-cart-logo-png-image-74546.png' className="cart-image" /> {num} </div>  </p>
@@ -11,4 +12,23 @@ class ProductHeader extends React.Component {
 	}
 }
 
-export default ProductHeader;
+// ProductHeader.defaultProps = {
+// 	num:0
+// }
+
+const mapStateToProps = (state) => {
+	//debugger;
+	var quantity=0;
+	if(state.cartReducer.items != undefined)
+	{	for(var i=0;i<state.cartReducer.items.length;i++)
+		{
+			quantity += state.cartReducer.items[i].quantity
+		}
+		return {quantity: quantity};
+		
+	}
+	else
+		return {quantity:0};
+}
+
+export default connect(mapStateToProps,null)(ProductHeader);
