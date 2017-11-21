@@ -15,4 +15,4 @@ export const removeFromCart = (product) => ({
 export const populateProducts = (products) => ({
 	type: POPULATE_PRODUCTS,
 	data: products
-})
+});
