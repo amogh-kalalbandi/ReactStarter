@@ -2,13 +2,23 @@ import React from 'react';
 import ProductHeader from '../components/ProductHeader';
 import ProductList from '../components/ProductList';
 import ProductDetailing from '../components/ProductDetailing';
-import { products } from '../stub';
+// import { products } from '../stub';
 import { connect } from 'react-redux';
 import {populateProducts} from '../actions/cart';
+import axios from 'axios';
 
 class ProductHomeContainer extends React.Component {
 	componentWillMount() {
-		this.props.populateProducts(products);
+		var products = ''
+		axios.get('http://127.0.0.1:8000/Product/')
+	  .then((response) => {
+	    products = response.data;
+	    this.props.populateProducts(products);
+	  })
+	  .catch(function (error) {
+	    console.log(error);
+	  });
+	  //debugger;
 		//debugger;
 	}
 	render() {

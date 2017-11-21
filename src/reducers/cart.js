@@ -9,7 +9,8 @@ function cartReducer(state = {}, action) {
       //debugger;
       for(var i=0;i<state.items.length;i++)
       {
-        if(state.items[i].productId == action.data.id) {
+
+        if(state.items[i].auto_id == action.data.id) {
           const item = state.items[i];
           item.quantity +=1;
 
@@ -27,7 +28,7 @@ function cartReducer(state = {}, action) {
         items: [
           ...(state.items || []),
           {
-            productId: action.data.id,
+            productId: action.data.auto_id,
             quantity: 1,
           },
         ]
@@ -38,7 +39,7 @@ function cartReducer(state = {}, action) {
     {
       for(var i=0;i<state.items.length;i++)
       {
-        if(state.items[i].productId == action.data.id)
+        if(state.items[i].productId == action.data.auto_id)
         {
           const item = state.items[i];
           item.quantity -=1;

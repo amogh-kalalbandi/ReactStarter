@@ -5,6 +5,7 @@ import { addToCart,removeFromCart } from '../actions/cart'
 
 class IndividualProduct extends React.Component {
 	addToCart = () => {
+
 		this.props.addToCart(this.props.product)
 	}
 
@@ -18,8 +19,8 @@ class IndividualProduct extends React.Component {
 		return (
 				<li className="individual-product"> 
 					<div className="product-container">
-						<Link to={`/details/${product.id}`} > 
-							<img src={product.image} /><br />
+						<Link to={`/details/${product.auto_id}`} > 
+							<img src={product.product_image} /><br />
 						</Link>
 							<div className="product-text">
 								{ product.name } 
