@@ -10,7 +10,8 @@ function cartReducer(state = {}, action) {
       for(var i=0;i<state.items.length;i++)
       {
 
-        if(state.items[i].auto_id == action.data.id) {
+        if(state.items[i].productId == action.data.auto_id) {
+          debugger;
           const item = state.items[i];
           item.quantity +=1;
 

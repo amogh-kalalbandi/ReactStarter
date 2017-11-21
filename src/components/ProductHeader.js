@@ -1,12 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class ProductHeader extends React.Component {
 	render() {
 		const num=this.props.quantity;
 		return (
 			<div className="product-header">
-				<p> Product List <div className="cart-image-container"><img src='http://pngimages.net/sites/default/files/shopping-cart-logo-png-image-74546.png' className="cart-image" /> {num} </div>  </p>
+				<p>  Product List 
+					<div className="cart-image-container">
+						<Link to={'/cartDetails'} >
+							<img src='http://pngimages.net/sites/default/files/shopping-cart-logo-png-image-74546.png' className="cart-image" /> 
+						</Link>
+						{num}
+					</div>
+				</p>
 			</div>
 			);
 	}

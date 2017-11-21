@@ -38,15 +38,15 @@
 }
 
 .cart-image {
-	height: 72px;
-	width: 42px;
-	float: right;
+	padding-top: 18px;
+	height: 88px;
+	width: 45px;
 	padding-bottom: 30px;
 }
 
 .individual-product > div > a > img {
-	height:100px;
-	width:100px;
+	height:200px;
+	width:107px;
 }
 
 .individual-product .product-container .product-text {
