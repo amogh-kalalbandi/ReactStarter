@@ -4,6 +4,7 @@ import ProductList from '../components/ProductList';
 import ProductDetailing from '../components/ProductDetailing';
 import { find } from 'lodash';
 import { connect } from 'react-redux';
+import RelatedProductComponents from '../components/RelatedProductComponents';
 //import { products } from '../stub'
 
 class ProductDetailsContainer extends React.Component {
@@ -25,7 +26,7 @@ class ProductDetailsContainer extends React.Component {
 					<ProductHeader />
 					<ProductDetailing product={id} />
 					<div>
-						<ProductList products={this.props.products} />
+						<RelatedProductComponents product={id} products={this.props.products} />
 					</div>
 				</div>
 				);

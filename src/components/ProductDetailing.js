@@ -14,7 +14,7 @@ class ProductDetailing extends React.Component {
 	}
 	render() {
 		const product = this.props.product
-		debugger;
+		//debugger;
 		return (
 				<div>
 					<img src={product.product_image} className="individual-product-image" />
