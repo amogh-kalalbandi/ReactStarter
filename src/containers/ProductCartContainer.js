@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 class ProductCartContainer extends React.Component {
 	render() {
-		debugger;
+		//debugger;
 		return (
 			<div>
 				<ProductHeader />

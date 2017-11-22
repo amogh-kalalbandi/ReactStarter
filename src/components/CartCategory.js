@@ -15,6 +15,15 @@ class CartCategory extends React.Component {
 				</div>
 				)
 		}
+		//debugger;
+		if(this.props.products.length == 0)
+		{
+			return (
+				<div>
+					Loading.....
+				</div>
+				);
+		}
 		for(var i=0;i<cart_items.length;i++)
 		{
 			if(this.props.products[i].auto_id == cart_items[i].productId)
